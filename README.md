@@ -6,7 +6,7 @@
 
 **A token-efficient, spec-driven development workflow for Claude Code.**
 
-Quake Skills enforces a structured workflow that catches mistakes before they become code, saving tokens and producing better software.
+Quake Skills enforces a structured workflow that catches mistakes before they become code, saving tokens and crafting better software.
 
 ---
 
