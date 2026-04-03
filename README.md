@@ -45,7 +45,7 @@ Copy the skills to your global Claude skills directory:
 
 ```bash
 # Clone this repo
-git clone https://github.com/YOUR_USERNAME/quake-skills.git
+git clone https://github.com/lucaspalencia/quake-skills.git
 
 # Copy to global skills (available in all projects)
 cp -r quake-skills/.claude/skills/quake-* ~/.claude/skills/
