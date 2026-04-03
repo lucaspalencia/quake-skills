@@ -6,9 +6,7 @@
 
 **A token-efficient, spec-driven development workflow for Claude Code.**
 
-4 skills. 4x damage. Plan before you code. Ship clean.
-
-Inspired by the discipline of arena combat — every shot counts, no wasted ammo. Quake Skills enforces a structured workflow that catches mistakes before they become code, saving tokens and producing better software.
+Quake Skills enforces a structured workflow that catches mistakes before they become code, saving tokens and producing better software.
 
 ---
 
