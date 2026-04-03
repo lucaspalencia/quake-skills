@@ -1,4 +1,4 @@
-# ⚡ Quake Skills
+# Quake Skills
 
 <p align="center">
   <img src="quakeskills.png" alt="Quake Skills — Spec-driven development workflow for Claude Code" width="100%"/>
@@ -15,51 +15,13 @@ Inspired by the discipline of arena combat — every shot counts, no wasted ammo
 ## The Workflow
 
 ```
-                    ┌─────────────────────────────────┐
-                    │         /quake:plan              │
-                    │    Architect the feature         │
-                    │    Outputs tasks + decisions     │
-                    │    Model: Opus                   │
-                    └──────────────┬──────────────────┘
-                                   │
-                          [approve plan]
-                                   │
-                    ┌──────────────▼──────────────────┐
-                    │         /quake:spec              │
-                    │    Define contracts + tests      │
-                    │    Then implement per task       │
-                    │    Model: Sonnet                 │
-                    │                                  │
-                    │    ┌────────────────────────┐    │
-                    │    │  For each task:         │    │
-                    │    │  1. Implement           │    │
-                    │    │  2. Write tests         │    │
-                    │    │  3. Run tests           │    │
-                    │    │  4. git commit          │    │
-                    │    │  5. Next task            │    │
-                    │    └────────────────────────┘    │
-                    └──────────────┬──────────────────┘
-                                   │
-                          [all tasks done]
-                                   │
-                    ┌──────────────▼──────────────────┐
-                    │        /quake:review             │
-                    │    Spec compliance + security    │
-                    │    + patterns + test suite       │
-                    │    Model: Sonnet                 │
-                    │    (--thorough for Opus)         │
-                    └──────────────┬──────────────────┘
-                                   │
-                          [review passes]
-                                   │
-                    ┌──────────────▼──────────────────┐
-                    │         /quake:ship              │
-                    │    Push + create PR              │
-                    │    No commits (already done)     │
-                    │    Model: Sonnet                 │
-                    └──────────────┬──────────────────┘
-                                   │
-                              [shipped]
+/quake:plan       Plan the feature, define tasks          [Opus]
+     ↓
+/quake:spec       Define contracts, then implement        [Sonnet]
+     ↓            (per-task: code → test → commit)
+/quake:review     Review diff against spec                [Sonnet]
+     ↓
+/quake:ship       Push + create PR                        [Sonnet]
 ```
 
 ---
@@ -179,16 +141,6 @@ This workflow is designed for personal projects where every token counts.
 | Implement (per task) | varies | Sonnet |
 | Review | ~3,000 | Sonnet |
 | Ship | ~1,000 | Sonnet |
-
----
-
-## Works with Superpowers
-
-[Superpowers](https://github.com/obra/superpowers) is complementary:
-
-- Use Superpowers' **brainstorming** for complex features where you're not sure _what_ to build yet (before `quake:plan`)
-- Use Superpowers' **TDD enforcement** when correctness is critical
-- Use **Quake** for the structured plan → spec → implement → review → ship pipeline
 
 ---
 
