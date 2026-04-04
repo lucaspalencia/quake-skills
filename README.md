@@ -56,28 +56,8 @@ Verify they're loaded:
 
 ```bash
 # In Claude Code, type:
-/quake:plan
+/skills
 ```
-
-### Claude Code on Web / Mobile
-
-Commit the skills to your project repo:
-
-```
-your-project/
-└── .claude/
-    └── skills/
-        ├── quake-plan/
-        │   └── SKILL.md
-        ├── quake-spec/
-        │   └── SKILL.md
-        ├── quake-review/
-        │   └── SKILL.md
-        └── quake-ship/
-            └── SKILL.md
-```
-
-The cloud environment clones your repo and discovers the skills automatically. You can invoke them via slash commands or conversationally ("use quake:plan to plan this feature").
 
 ---
 
