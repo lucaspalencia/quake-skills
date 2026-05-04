@@ -152,7 +152,3 @@ This is a personal workflow — fork it and make it yours. Some ideas:
 ## License
 
 MIT
-
----
-
-*"In the arena, hesitation kills. In code, planning saves."*
